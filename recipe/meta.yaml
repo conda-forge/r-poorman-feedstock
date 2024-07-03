@@ -1,6 +1,5 @@
 {% set version = "0.2.7" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-poorman
@@ -13,8 +12,7 @@ source:
   sha256: 089418293cdfde3b46bf53e891a3a8ad924d953a1a7e5ae981de54ebde62b4aa
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
