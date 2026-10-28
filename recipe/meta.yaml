@@ -1,4 +1,4 @@
-{% set version = "0.2.8" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/poorman_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/poorman/poorman_{{ version }}.tar.gz
-  sha256: 6f48194fcdc0dbbb080f8ac61589871f7c0dc557dc31d3278b97d54f8e606fde
+  sha256: f297c514fbddaeafb730da31fd267dbc94bda1916ffdb893a35d253e54d92350
 
 build:
   number: 0
